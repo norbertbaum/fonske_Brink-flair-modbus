@@ -508,7 +508,7 @@ select:
 #    on_value:
 #        then:
 #          - lambda: |-
-#              std::string current_mode_str = id(brink_modbus_control_mode).state;
+#              std::string current_mode_str = id(brink_modbus_control_mode).current_option();
 #              std::string requested_mode_str = x;  // 'x' is the requested mode value
 #
 #              // Convert strings to integers using the options map
